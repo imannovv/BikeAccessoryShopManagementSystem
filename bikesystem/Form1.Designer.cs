@@ -29,21 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LogOutButton = new System.Windows.Forms.Button();
-            this.LogOutIcon = new System.Windows.Forms.PictureBox();
             this.BillsButton = new System.Windows.Forms.Button();
-            this.BillsIcon = new System.Windows.Forms.PictureBox();
             this.User2Button = new System.Windows.Forms.Button();
-            this.User2Icon = new System.Windows.Forms.PictureBox();
             this.User1Button = new System.Windows.Forms.Button();
-            this.User1Icon = new System.Windows.Forms.PictureBox();
             this.AccessoriesButton = new System.Windows.Forms.Button();
-            this.AccessoriesIcon = new System.Windows.Forms.PictureBox();
-            this.BikeStoreIcon = new System.Windows.Forms.PictureBox();
             this.HeaderText = new System.Windows.Forms.Label();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.ItemsManagementHeader = new System.Windows.Forms.Label();
@@ -59,16 +53,22 @@
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.BackIcon = new System.Windows.Forms.PictureBox();
             this.ItemsManagementIcon = new System.Windows.Forms.PictureBox();
+            this.LogOutIcon = new System.Windows.Forms.PictureBox();
+            this.BillsIcon = new System.Windows.Forms.PictureBox();
+            this.User2Icon = new System.Windows.Forms.PictureBox();
+            this.User1Icon = new System.Windows.Forms.PictureBox();
+            this.AccessoriesIcon = new System.Windows.Forms.PictureBox();
+            this.BikeStoreIcon = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BillsIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BikeStoreIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,7 +89,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(218, 888);
+            this.panel1.Size = new System.Drawing.Size(218, 856);
             this.panel1.TabIndex = 0;
             // 
             // LogOutButton
@@ -99,24 +99,13 @@
             this.LogOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogOutButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LogOutButton.ForeColor = System.Drawing.Color.White;
-            this.LogOutButton.Location = new System.Drawing.Point(81, 823);
+            this.LogOutButton.Location = new System.Drawing.Point(81, 799);
             this.LogOutButton.Name = "LogOutButton";
             this.LogOutButton.Size = new System.Drawing.Size(82, 36);
             this.LogOutButton.TabIndex = 11;
             this.LogOutButton.Text = "Logout";
             this.LogOutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogOutButton.UseVisualStyleBackColor = false;
-            // 
-            // LogOutIcon
-            // 
-            this.LogOutIcon.BackColor = System.Drawing.Color.Transparent;
-            this.LogOutIcon.Image = global::bikesystem.Properties.Resources.icons8_logout_60;
-            this.LogOutIcon.Location = new System.Drawing.Point(30, 813);
-            this.LogOutIcon.Name = "LogOutIcon";
-            this.LogOutIcon.Size = new System.Drawing.Size(50, 46);
-            this.LogOutIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.LogOutIcon.TabIndex = 10;
-            this.LogOutIcon.TabStop = false;
             // 
             // BillsButton
             // 
@@ -133,17 +122,6 @@
             this.BillsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BillsButton.UseVisualStyleBackColor = false;
             // 
-            // BillsIcon
-            // 
-            this.BillsIcon.BackColor = System.Drawing.Color.Transparent;
-            this.BillsIcon.Image = global::bikesystem.Properties.Resources.icons8_estimate_60;
-            this.BillsIcon.Location = new System.Drawing.Point(30, 526);
-            this.BillsIcon.Name = "BillsIcon";
-            this.BillsIcon.Size = new System.Drawing.Size(50, 46);
-            this.BillsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BillsIcon.TabIndex = 8;
-            this.BillsIcon.TabStop = false;
-            // 
             // User2Button
             // 
             this.User2Button.BackColor = System.Drawing.Color.Transparent;
@@ -158,17 +136,6 @@
             this.User2Button.Text = "User2";
             this.User2Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.User2Button.UseVisualStyleBackColor = false;
-            // 
-            // User2Icon
-            // 
-            this.User2Icon.BackColor = System.Drawing.Color.Transparent;
-            this.User2Icon.Image = global::bikesystem.Properties.Resources.icons8_user_menu_male_64;
-            this.User2Icon.Location = new System.Drawing.Point(30, 436);
-            this.User2Icon.Name = "User2Icon";
-            this.User2Icon.Size = new System.Drawing.Size(50, 46);
-            this.User2Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.User2Icon.TabIndex = 6;
-            this.User2Icon.TabStop = false;
             // 
             // User1Button
             // 
@@ -186,17 +153,6 @@
             this.User1Button.UseVisualStyleBackColor = false;
             this.User1Button.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // User1Icon
-            // 
-            this.User1Icon.BackColor = System.Drawing.Color.Transparent;
-            this.User1Icon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
-            this.User1Icon.Location = new System.Drawing.Point(30, 349);
-            this.User1Icon.Name = "User1Icon";
-            this.User1Icon.Size = new System.Drawing.Size(50, 46);
-            this.User1Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.User1Icon.TabIndex = 4;
-            this.User1Icon.TabStop = false;
-            // 
             // AccessoriesButton
             // 
             this.AccessoriesButton.BackColor = System.Drawing.Color.Transparent;
@@ -212,30 +168,6 @@
             this.AccessoriesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AccessoriesButton.UseVisualStyleBackColor = false;
             this.AccessoriesButton.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // AccessoriesIcon
-            // 
-            this.AccessoriesIcon.BackColor = System.Drawing.Color.Transparent;
-            this.AccessoriesIcon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
-            this.AccessoriesIcon.Location = new System.Drawing.Point(30, 260);
-            this.AccessoriesIcon.Name = "AccessoriesIcon";
-            this.AccessoriesIcon.Size = new System.Drawing.Size(50, 46);
-            this.AccessoriesIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AccessoriesIcon.TabIndex = 2;
-            this.AccessoriesIcon.TabStop = false;
-            this.AccessoriesIcon.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // BikeStoreIcon
-            // 
-            this.BikeStoreIcon.BackColor = System.Drawing.Color.Transparent;
-            this.BikeStoreIcon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
-            this.BikeStoreIcon.Location = new System.Drawing.Point(81, 47);
-            this.BikeStoreIcon.Name = "BikeStoreIcon";
-            this.BikeStoreIcon.Size = new System.Drawing.Size(50, 46);
-            this.BikeStoreIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BikeStoreIcon.TabIndex = 1;
-            this.BikeStoreIcon.TabStop = false;
-            this.BikeStoreIcon.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // HeaderText
             // 
@@ -273,7 +205,7 @@
             this.ItemNameBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ItemNameBox.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ItemNameBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ItemNameBox.Location = new System.Drawing.Point(327, 198);
+            this.ItemNameBox.Location = new System.Drawing.Point(258, 198);
             this.ItemNameBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ItemNameBox.Name = "ItemNameBox";
             this.ItemNameBox.PasswordChar = '\0';
@@ -294,7 +226,7 @@
             this.ItemCategoryBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ItemCategoryBox.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ItemCategoryBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ItemCategoryBox.Location = new System.Drawing.Point(327, 338);
+            this.ItemCategoryBox.Location = new System.Drawing.Point(258, 338);
             this.ItemCategoryBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ItemCategoryBox.Name = "ItemCategoryBox";
             this.ItemCategoryBox.PasswordChar = '\0';
@@ -314,7 +246,7 @@
             this.ItemPriceBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ItemPriceBox.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ItemPriceBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ItemPriceBox.Location = new System.Drawing.Point(327, 270);
+            this.ItemPriceBox.Location = new System.Drawing.Point(258, 270);
             this.ItemPriceBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ItemPriceBox.Name = "ItemPriceBox";
             this.ItemPriceBox.PasswordChar = '\0';
@@ -334,7 +266,7 @@
             this.QuantityBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.QuantityBox.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.QuantityBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.QuantityBox.Location = new System.Drawing.Point(327, 479);
+            this.QuantityBox.Location = new System.Drawing.Point(258, 479);
             this.QuantityBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.QuantityBox.Name = "QuantityBox";
             this.QuantityBox.PasswordChar = '\0';
@@ -354,7 +286,7 @@
             this.ItemDetailsBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ItemDetailsBox.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ItemDetailsBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ItemDetailsBox.Location = new System.Drawing.Point(327, 407);
+            this.ItemDetailsBox.Location = new System.Drawing.Point(258, 407);
             this.ItemDetailsBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ItemDetailsBox.Name = "ItemDetailsBox";
             this.ItemDetailsBox.PasswordChar = '\0';
@@ -373,9 +305,9 @@
             this.AddItemButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(180)))), ((int)(((byte)(137)))));
             this.AddItemButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AddItemButton.ForeColor = System.Drawing.Color.Black;
-            this.AddItemButton.Location = new System.Drawing.Point(268, 597);
+            this.AddItemButton.Location = new System.Drawing.Point(237, 570);
             this.AddItemButton.Name = "AddItemButton";
-            this.AddItemButton.Size = new System.Drawing.Size(180, 45);
+            this.AddItemButton.Size = new System.Drawing.Size(150, 45);
             this.AddItemButton.TabIndex = 9;
             this.AddItemButton.Text = "Add Item";
             // 
@@ -389,9 +321,9 @@
             this.EditItemButton.FillColor = System.Drawing.Color.Black;
             this.EditItemButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.EditItemButton.ForeColor = System.Drawing.Color.White;
-            this.EditItemButton.Location = new System.Drawing.Point(494, 597);
+            this.EditItemButton.Location = new System.Drawing.Point(418, 570);
             this.EditItemButton.Name = "EditItemButton";
-            this.EditItemButton.Size = new System.Drawing.Size(180, 45);
+            this.EditItemButton.Size = new System.Drawing.Size(150, 45);
             this.EditItemButton.TabIndex = 10;
             this.EditItemButton.Text = "Edit Item";
             // 
@@ -405,9 +337,9 @@
             this.DeleteItemButton.FillColor = System.Drawing.Color.Crimson;
             this.DeleteItemButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.DeleteItemButton.ForeColor = System.Drawing.Color.White;
-            this.DeleteItemButton.Location = new System.Drawing.Point(371, 664);
+            this.DeleteItemButton.Location = new System.Drawing.Point(324, 631);
             this.DeleteItemButton.Name = "DeleteItemButton";
-            this.DeleteItemButton.Size = new System.Drawing.Size(180, 45);
+            this.DeleteItemButton.Size = new System.Drawing.Size(150, 45);
             this.DeleteItemButton.TabIndex = 11;
             this.DeleteItemButton.Text = "Delete Item";
             // 
@@ -417,38 +349,38 @@
             this.GunaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(180)))), ((int)(((byte)(137)))));
             this.GunaPanel.BorderRadius = 4;
             this.GunaPanel.BorderThickness = 1;
-            this.GunaPanel.Location = new System.Drawing.Point(731, 103);
+            this.GunaPanel.Location = new System.Drawing.Point(586, 86);
             this.GunaPanel.Name = "GunaPanel";
             this.GunaPanel.Size = new System.Drawing.Size(11, 732);
             this.GunaPanel.TabIndex = 12;
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(764, 169);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(625, 126);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(707, 640);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(863, 683);
             this.guna2DataGridView1.TabIndex = 13;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -477,7 +409,7 @@
             // 
             this.BackIcon.BackColor = System.Drawing.Color.Transparent;
             this.BackIcon.Image = global::bikesystem.Properties.Resources.icons8_back_64;
-            this.BackIcon.Location = new System.Drawing.Point(1434, 0);
+            this.BackIcon.Location = new System.Drawing.Point(1473, 0);
             this.BackIcon.Name = "BackIcon";
             this.BackIcon.Size = new System.Drawing.Size(50, 46);
             this.BackIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -495,12 +427,80 @@
             this.ItemsManagementIcon.TabIndex = 2;
             this.ItemsManagementIcon.TabStop = false;
             // 
+            // LogOutIcon
+            // 
+            this.LogOutIcon.BackColor = System.Drawing.Color.Transparent;
+            this.LogOutIcon.Image = global::bikesystem.Properties.Resources.icons8_logout_60;
+            this.LogOutIcon.Location = new System.Drawing.Point(30, 789);
+            this.LogOutIcon.Name = "LogOutIcon";
+            this.LogOutIcon.Size = new System.Drawing.Size(50, 46);
+            this.LogOutIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LogOutIcon.TabIndex = 10;
+            this.LogOutIcon.TabStop = false;
+            // 
+            // BillsIcon
+            // 
+            this.BillsIcon.BackColor = System.Drawing.Color.Transparent;
+            this.BillsIcon.Image = global::bikesystem.Properties.Resources.icons8_estimate_60;
+            this.BillsIcon.Location = new System.Drawing.Point(30, 526);
+            this.BillsIcon.Name = "BillsIcon";
+            this.BillsIcon.Size = new System.Drawing.Size(50, 46);
+            this.BillsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BillsIcon.TabIndex = 8;
+            this.BillsIcon.TabStop = false;
+            // 
+            // User2Icon
+            // 
+            this.User2Icon.BackColor = System.Drawing.Color.Transparent;
+            this.User2Icon.Image = global::bikesystem.Properties.Resources.icons8_user_menu_male_64;
+            this.User2Icon.Location = new System.Drawing.Point(30, 436);
+            this.User2Icon.Name = "User2Icon";
+            this.User2Icon.Size = new System.Drawing.Size(50, 46);
+            this.User2Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.User2Icon.TabIndex = 6;
+            this.User2Icon.TabStop = false;
+            // 
+            // User1Icon
+            // 
+            this.User1Icon.BackColor = System.Drawing.Color.Transparent;
+            this.User1Icon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
+            this.User1Icon.Location = new System.Drawing.Point(30, 349);
+            this.User1Icon.Name = "User1Icon";
+            this.User1Icon.Size = new System.Drawing.Size(50, 46);
+            this.User1Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.User1Icon.TabIndex = 4;
+            this.User1Icon.TabStop = false;
+            // 
+            // AccessoriesIcon
+            // 
+            this.AccessoriesIcon.BackColor = System.Drawing.Color.Transparent;
+            this.AccessoriesIcon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
+            this.AccessoriesIcon.Location = new System.Drawing.Point(30, 260);
+            this.AccessoriesIcon.Name = "AccessoriesIcon";
+            this.AccessoriesIcon.Size = new System.Drawing.Size(50, 46);
+            this.AccessoriesIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AccessoriesIcon.TabIndex = 2;
+            this.AccessoriesIcon.TabStop = false;
+            this.AccessoriesIcon.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // BikeStoreIcon
+            // 
+            this.BikeStoreIcon.BackColor = System.Drawing.Color.Transparent;
+            this.BikeStoreIcon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
+            this.BikeStoreIcon.Location = new System.Drawing.Point(81, 47);
+            this.BikeStoreIcon.Name = "BikeStoreIcon";
+            this.BikeStoreIcon.Size = new System.Drawing.Size(50, 46);
+            this.BikeStoreIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BikeStoreIcon.TabIndex = 1;
+            this.BikeStoreIcon.TabStop = false;
+            this.BikeStoreIcon.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1483, 888);
+            this.ClientSize = new System.Drawing.Size(1520, 856);
             this.Controls.Add(this.BackIcon);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.GunaPanel);
@@ -517,19 +517,20 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BillsIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User2Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User1Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BikeStoreIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
