@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace bikesystem
 {
-    public partial class Form1 : Form
+    public partial class Bikes : Form
     {
-        public Form1()
+        public Bikes()
         {
             InitializeComponent();
         }

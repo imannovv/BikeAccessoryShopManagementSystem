@@ -1,6 +1,6 @@
 ﻿namespace bikesystem
 {
-    partial class Form1
+    partial class Bikes
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
