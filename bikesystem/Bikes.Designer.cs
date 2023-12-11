@@ -34,10 +34,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LogOutButton = new System.Windows.Forms.Button();
+            this.LogOutIcon = new System.Windows.Forms.PictureBox();
             this.BillsButton = new System.Windows.Forms.Button();
+            this.BillsIcon = new System.Windows.Forms.PictureBox();
             this.User2Button = new System.Windows.Forms.Button();
+            this.User2Icon = new System.Windows.Forms.PictureBox();
             this.User1Button = new System.Windows.Forms.Button();
+            this.User1Icon = new System.Windows.Forms.PictureBox();
             this.AccessoriesButton = new System.Windows.Forms.Button();
+            this.AccessoriesIcon = new System.Windows.Forms.PictureBox();
+            this.BikeStoreIcon = new System.Windows.Forms.PictureBox();
             this.HeaderText = new System.Windows.Forms.Label();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.ItemsManagementHeader = new System.Windows.Forms.Label();
@@ -53,22 +59,16 @@
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.BackIcon = new System.Windows.Forms.PictureBox();
             this.ItemsManagementIcon = new System.Windows.Forms.PictureBox();
-            this.LogOutIcon = new System.Windows.Forms.PictureBox();
-            this.BillsIcon = new System.Windows.Forms.PictureBox();
-            this.User2Icon = new System.Windows.Forms.PictureBox();
-            this.User1Icon = new System.Windows.Forms.PictureBox();
-            this.AccessoriesIcon = new System.Windows.Forms.PictureBox();
-            this.BikeStoreIcon = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BillsIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BikeStoreIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,13 +99,24 @@
             this.LogOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogOutButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LogOutButton.ForeColor = System.Drawing.Color.White;
-            this.LogOutButton.Location = new System.Drawing.Point(81, 799);
+            this.LogOutButton.Location = new System.Drawing.Point(81, 796);
             this.LogOutButton.Name = "LogOutButton";
             this.LogOutButton.Size = new System.Drawing.Size(82, 36);
             this.LogOutButton.TabIndex = 11;
             this.LogOutButton.Text = "Logout";
             this.LogOutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogOutButton.UseVisualStyleBackColor = false;
+            // 
+            // LogOutIcon
+            // 
+            this.LogOutIcon.BackColor = System.Drawing.Color.Transparent;
+            this.LogOutIcon.Image = global::bikesystem.Properties.Resources.icons8_logout_60;
+            this.LogOutIcon.Location = new System.Drawing.Point(30, 789);
+            this.LogOutIcon.Name = "LogOutIcon";
+            this.LogOutIcon.Size = new System.Drawing.Size(50, 46);
+            this.LogOutIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LogOutIcon.TabIndex = 10;
+            this.LogOutIcon.TabStop = false;
             // 
             // BillsButton
             // 
@@ -122,6 +133,17 @@
             this.BillsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BillsButton.UseVisualStyleBackColor = false;
             // 
+            // BillsIcon
+            // 
+            this.BillsIcon.BackColor = System.Drawing.Color.Transparent;
+            this.BillsIcon.Image = global::bikesystem.Properties.Resources.icons8_estimate_60;
+            this.BillsIcon.Location = new System.Drawing.Point(30, 526);
+            this.BillsIcon.Name = "BillsIcon";
+            this.BillsIcon.Size = new System.Drawing.Size(50, 46);
+            this.BillsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BillsIcon.TabIndex = 8;
+            this.BillsIcon.TabStop = false;
+            // 
             // User2Button
             // 
             this.User2Button.BackColor = System.Drawing.Color.Transparent;
@@ -136,6 +158,17 @@
             this.User2Button.Text = "User2";
             this.User2Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.User2Button.UseVisualStyleBackColor = false;
+            // 
+            // User2Icon
+            // 
+            this.User2Icon.BackColor = System.Drawing.Color.Transparent;
+            this.User2Icon.Image = global::bikesystem.Properties.Resources.icons8_user_menu_male_64;
+            this.User2Icon.Location = new System.Drawing.Point(30, 436);
+            this.User2Icon.Name = "User2Icon";
+            this.User2Icon.Size = new System.Drawing.Size(50, 46);
+            this.User2Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.User2Icon.TabIndex = 6;
+            this.User2Icon.TabStop = false;
             // 
             // User1Button
             // 
@@ -153,6 +186,17 @@
             this.User1Button.UseVisualStyleBackColor = false;
             this.User1Button.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // User1Icon
+            // 
+            this.User1Icon.BackColor = System.Drawing.Color.Transparent;
+            this.User1Icon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
+            this.User1Icon.Location = new System.Drawing.Point(30, 349);
+            this.User1Icon.Name = "User1Icon";
+            this.User1Icon.Size = new System.Drawing.Size(50, 46);
+            this.User1Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.User1Icon.TabIndex = 4;
+            this.User1Icon.TabStop = false;
+            // 
             // AccessoriesButton
             // 
             this.AccessoriesButton.BackColor = System.Drawing.Color.Transparent;
@@ -168,6 +212,30 @@
             this.AccessoriesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AccessoriesButton.UseVisualStyleBackColor = false;
             this.AccessoriesButton.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // AccessoriesIcon
+            // 
+            this.AccessoriesIcon.BackColor = System.Drawing.Color.Transparent;
+            this.AccessoriesIcon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
+            this.AccessoriesIcon.Location = new System.Drawing.Point(30, 260);
+            this.AccessoriesIcon.Name = "AccessoriesIcon";
+            this.AccessoriesIcon.Size = new System.Drawing.Size(50, 46);
+            this.AccessoriesIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AccessoriesIcon.TabIndex = 2;
+            this.AccessoriesIcon.TabStop = false;
+            this.AccessoriesIcon.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // BikeStoreIcon
+            // 
+            this.BikeStoreIcon.BackColor = System.Drawing.Color.Transparent;
+            this.BikeStoreIcon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
+            this.BikeStoreIcon.Location = new System.Drawing.Point(81, 47);
+            this.BikeStoreIcon.Name = "BikeStoreIcon";
+            this.BikeStoreIcon.Size = new System.Drawing.Size(50, 46);
+            this.BikeStoreIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BikeStoreIcon.TabIndex = 1;
+            this.BikeStoreIcon.TabStop = false;
+            this.BikeStoreIcon.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // HeaderText
             // 
@@ -427,75 +495,7 @@
             this.ItemsManagementIcon.TabIndex = 2;
             this.ItemsManagementIcon.TabStop = false;
             // 
-            // LogOutIcon
-            // 
-            this.LogOutIcon.BackColor = System.Drawing.Color.Transparent;
-            this.LogOutIcon.Image = global::bikesystem.Properties.Resources.icons8_logout_60;
-            this.LogOutIcon.Location = new System.Drawing.Point(30, 789);
-            this.LogOutIcon.Name = "LogOutIcon";
-            this.LogOutIcon.Size = new System.Drawing.Size(50, 46);
-            this.LogOutIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.LogOutIcon.TabIndex = 10;
-            this.LogOutIcon.TabStop = false;
-            // 
-            // BillsIcon
-            // 
-            this.BillsIcon.BackColor = System.Drawing.Color.Transparent;
-            this.BillsIcon.Image = global::bikesystem.Properties.Resources.icons8_estimate_60;
-            this.BillsIcon.Location = new System.Drawing.Point(30, 526);
-            this.BillsIcon.Name = "BillsIcon";
-            this.BillsIcon.Size = new System.Drawing.Size(50, 46);
-            this.BillsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BillsIcon.TabIndex = 8;
-            this.BillsIcon.TabStop = false;
-            // 
-            // User2Icon
-            // 
-            this.User2Icon.BackColor = System.Drawing.Color.Transparent;
-            this.User2Icon.Image = global::bikesystem.Properties.Resources.icons8_user_menu_male_64;
-            this.User2Icon.Location = new System.Drawing.Point(30, 436);
-            this.User2Icon.Name = "User2Icon";
-            this.User2Icon.Size = new System.Drawing.Size(50, 46);
-            this.User2Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.User2Icon.TabIndex = 6;
-            this.User2Icon.TabStop = false;
-            // 
-            // User1Icon
-            // 
-            this.User1Icon.BackColor = System.Drawing.Color.Transparent;
-            this.User1Icon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
-            this.User1Icon.Location = new System.Drawing.Point(30, 349);
-            this.User1Icon.Name = "User1Icon";
-            this.User1Icon.Size = new System.Drawing.Size(50, 46);
-            this.User1Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.User1Icon.TabIndex = 4;
-            this.User1Icon.TabStop = false;
-            // 
-            // AccessoriesIcon
-            // 
-            this.AccessoriesIcon.BackColor = System.Drawing.Color.Transparent;
-            this.AccessoriesIcon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
-            this.AccessoriesIcon.Location = new System.Drawing.Point(30, 260);
-            this.AccessoriesIcon.Name = "AccessoriesIcon";
-            this.AccessoriesIcon.Size = new System.Drawing.Size(50, 46);
-            this.AccessoriesIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AccessoriesIcon.TabIndex = 2;
-            this.AccessoriesIcon.TabStop = false;
-            this.AccessoriesIcon.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // BikeStoreIcon
-            // 
-            this.BikeStoreIcon.BackColor = System.Drawing.Color.Transparent;
-            this.BikeStoreIcon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
-            this.BikeStoreIcon.Location = new System.Drawing.Point(81, 47);
-            this.BikeStoreIcon.Name = "BikeStoreIcon";
-            this.BikeStoreIcon.Size = new System.Drawing.Size(50, 46);
-            this.BikeStoreIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BikeStoreIcon.TabIndex = 1;
-            this.BikeStoreIcon.TabStop = false;
-            this.BikeStoreIcon.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // Form1
+            // Bikes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -516,21 +516,21 @@
             this.Controls.Add(this.ItemsManagementHeader);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Bikes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BillsIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User2Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User1Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BikeStoreIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
