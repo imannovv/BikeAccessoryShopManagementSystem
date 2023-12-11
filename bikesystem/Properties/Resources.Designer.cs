@@ -73,6 +73,16 @@ namespace bikesystem.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_check_dollar_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-check-dollar-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_estimate_60 {
             get {
                 object obj = ResourceManager.GetObject("icons8-estimate-60", resourceCulture);
