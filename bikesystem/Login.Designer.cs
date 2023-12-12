@@ -37,6 +37,7 @@
             this.Login_PasswordBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.Login_LoginButton = new Guna.UI2.WinForms.Guna2Button();
             this.Login_BackIcon = new System.Windows.Forms.PictureBox();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Login_BikeAccessoriesIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Login_BackIcon)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel1.Controls.Add(this.Login_BikeAccessoriesIcon);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -60,7 +62,7 @@
             this.Login_BikeAccoriesSystem.AutoSize = true;
             this.Login_BikeAccoriesSystem.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Login_BikeAccoriesSystem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(180)))), ((int)(((byte)(137)))));
-            this.Login_BikeAccoriesSystem.Location = new System.Drawing.Point(290, 25);
+            this.Login_BikeAccoriesSystem.Location = new System.Drawing.Point(290, 79);
             this.Login_BikeAccoriesSystem.Name = "Login_BikeAccoriesSystem";
             this.Login_BikeAccoriesSystem.Size = new System.Drawing.Size(279, 37);
             this.Login_BikeAccoriesSystem.TabIndex = 31;
@@ -70,7 +72,7 @@
             // 
             this.Login_BikeAccessoriesIcon.BackColor = System.Drawing.Color.Transparent;
             this.Login_BikeAccessoriesIcon.Image = global::bikesystem.Properties.Resources.icons8_scooter_60;
-            this.Login_BikeAccessoriesIcon.Location = new System.Drawing.Point(408, 56);
+            this.Login_BikeAccessoriesIcon.Location = new System.Drawing.Point(85, 192);
             this.Login_BikeAccessoriesIcon.Name = "Login_BikeAccessoriesIcon";
             this.Login_BikeAccessoriesIcon.Size = new System.Drawing.Size(50, 46);
             this.Login_BikeAccessoriesIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -154,7 +156,6 @@
             this.Controls.Add(this.Login_LoginButton);
             this.Controls.Add(this.Login_PasswordBox);
             this.Controls.Add(this.Login_UserNameBox);
-            this.Controls.Add(this.Login_BikeAccessoriesIcon);
             this.Controls.Add(this.Login_BikeAccoriesSystem);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -163,6 +164,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Login_BikeAccessoriesIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Login_BackIcon)).EndInit();
             this.ResumeLayout(false);
