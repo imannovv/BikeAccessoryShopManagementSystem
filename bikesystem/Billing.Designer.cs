@@ -42,8 +42,7 @@
             this.LogOutButton = new System.Windows.Forms.Button();
             this.BillsButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.User2Button = new System.Windows.Forms.Button();
-            this.User1Button = new System.Windows.Forms.Button();
+            this.Bills_UsersButton = new System.Windows.Forms.Button();
             this.AccessoriesButton = new System.Windows.Forms.Button();
             this.HeaderText = new System.Windows.Forms.Label();
             this.Bills_NameBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -60,7 +59,6 @@
             this.LogOutIcon = new System.Windows.Forms.PictureBox();
             this.BillsIcon = new System.Windows.Forms.PictureBox();
             this.User2Icon = new System.Windows.Forms.PictureBox();
-            this.User1Icon = new System.Windows.Forms.PictureBox();
             this.AccessoriesIcon = new System.Windows.Forms.PictureBox();
             this.BikeStoreIcon = new System.Windows.Forms.PictureBox();
             this.Bills_ClientBill = new System.Windows.Forms.Label();
@@ -72,7 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LogOutIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BillsIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User2Icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.User1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BikeStoreIcon)).BeginInit();
             this.SuspendLayout();
@@ -169,7 +166,7 @@
             this.BillsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BillsButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BillsButton.ForeColor = System.Drawing.Color.White;
-            this.BillsButton.Location = new System.Drawing.Point(81, 536);
+            this.BillsButton.Location = new System.Drawing.Point(81, 449);
             this.BillsButton.Name = "BillsButton";
             this.BillsButton.Size = new System.Drawing.Size(63, 36);
             this.BillsButton.TabIndex = 9;
@@ -184,10 +181,8 @@
             this.panel1.Controls.Add(this.LogOutIcon);
             this.panel1.Controls.Add(this.BillsButton);
             this.panel1.Controls.Add(this.BillsIcon);
-            this.panel1.Controls.Add(this.User2Button);
+            this.panel1.Controls.Add(this.Bills_UsersButton);
             this.panel1.Controls.Add(this.User2Icon);
-            this.panel1.Controls.Add(this.User1Button);
-            this.panel1.Controls.Add(this.User1Icon);
             this.panel1.Controls.Add(this.AccessoriesButton);
             this.panel1.Controls.Add(this.AccessoriesIcon);
             this.panel1.Controls.Add(this.BikeStoreIcon);
@@ -198,35 +193,20 @@
             this.panel1.Size = new System.Drawing.Size(218, 856);
             this.panel1.TabIndex = 29;
             // 
-            // User2Button
+            // Bills_UsersButton
             // 
-            this.User2Button.BackColor = System.Drawing.Color.Transparent;
-            this.User2Button.FlatAppearance.BorderSize = 0;
-            this.User2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.User2Button.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.User2Button.ForeColor = System.Drawing.Color.White;
-            this.User2Button.Location = new System.Drawing.Point(81, 446);
-            this.User2Button.Name = "User2Button";
-            this.User2Button.Size = new System.Drawing.Size(63, 36);
-            this.User2Button.TabIndex = 7;
-            this.User2Button.Text = "User2";
-            this.User2Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.User2Button.UseVisualStyleBackColor = false;
-            // 
-            // User1Button
-            // 
-            this.User1Button.BackColor = System.Drawing.Color.Transparent;
-            this.User1Button.FlatAppearance.BorderSize = 0;
-            this.User1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.User1Button.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.User1Button.ForeColor = System.Drawing.Color.White;
-            this.User1Button.Location = new System.Drawing.Point(81, 359);
-            this.User1Button.Name = "User1Button";
-            this.User1Button.Size = new System.Drawing.Size(63, 36);
-            this.User1Button.TabIndex = 5;
-            this.User1Button.Text = "User1";
-            this.User1Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.User1Button.UseVisualStyleBackColor = false;
+            this.Bills_UsersButton.BackColor = System.Drawing.Color.Transparent;
+            this.Bills_UsersButton.FlatAppearance.BorderSize = 0;
+            this.Bills_UsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bills_UsersButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Bills_UsersButton.ForeColor = System.Drawing.Color.White;
+            this.Bills_UsersButton.Location = new System.Drawing.Point(81, 359);
+            this.Bills_UsersButton.Name = "Bills_UsersButton";
+            this.Bills_UsersButton.Size = new System.Drawing.Size(63, 36);
+            this.Bills_UsersButton.TabIndex = 7;
+            this.Bills_UsersButton.Text = "Users";
+            this.Bills_UsersButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Bills_UsersButton.UseVisualStyleBackColor = false;
             // 
             // AccessoriesButton
             // 
@@ -451,7 +431,7 @@
             // 
             this.BillsIcon.BackColor = System.Drawing.Color.Transparent;
             this.BillsIcon.Image = global::bikesystem.Properties.Resources.icons8_estimate_60;
-            this.BillsIcon.Location = new System.Drawing.Point(30, 526);
+            this.BillsIcon.Location = new System.Drawing.Point(30, 439);
             this.BillsIcon.Name = "BillsIcon";
             this.BillsIcon.Size = new System.Drawing.Size(50, 46);
             this.BillsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -462,23 +442,12 @@
             // 
             this.User2Icon.BackColor = System.Drawing.Color.Transparent;
             this.User2Icon.Image = global::bikesystem.Properties.Resources.icons8_user_menu_male_64;
-            this.User2Icon.Location = new System.Drawing.Point(30, 436);
+            this.User2Icon.Location = new System.Drawing.Point(30, 349);
             this.User2Icon.Name = "User2Icon";
             this.User2Icon.Size = new System.Drawing.Size(50, 46);
             this.User2Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.User2Icon.TabIndex = 6;
             this.User2Icon.TabStop = false;
-            // 
-            // User1Icon
-            // 
-            this.User1Icon.BackColor = System.Drawing.Color.Transparent;
-            this.User1Icon.Image = global::bikesystem.Properties.Resources.icons8_quad_bike_60;
-            this.User1Icon.Location = new System.Drawing.Point(30, 349);
-            this.User1Icon.Name = "User1Icon";
-            this.User1Icon.Size = new System.Drawing.Size(50, 46);
-            this.User1Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.User1Icon.TabIndex = 4;
-            this.User1Icon.TabStop = false;
             // 
             // AccessoriesIcon
             // 
@@ -550,7 +519,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LogOutIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BillsIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User2Icon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.User1Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BikeStoreIcon)).EndInit();
             this.ResumeLayout(false);
@@ -570,10 +538,8 @@
         private System.Windows.Forms.Button LogOutButton;
         private System.Windows.Forms.Button BillsButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button User2Button;
+        private System.Windows.Forms.Button Bills_UsersButton;
         private System.Windows.Forms.PictureBox User2Icon;
-        private System.Windows.Forms.Button User1Button;
-        private System.Windows.Forms.PictureBox User1Icon;
         private System.Windows.Forms.Button AccessoriesButton;
         private System.Windows.Forms.PictureBox AccessoriesIcon;
         private System.Windows.Forms.PictureBox BikeStoreIcon;

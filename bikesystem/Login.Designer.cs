@@ -137,7 +137,7 @@
             // 
             this.Login_BackIcon.BackColor = System.Drawing.Color.Transparent;
             this.Login_BackIcon.Image = global::bikesystem.Properties.Resources.icons8_back_64;
-            this.Login_BackIcon.Location = new System.Drawing.Point(594, 0);
+            this.Login_BackIcon.Location = new System.Drawing.Point(583, 12);
             this.Login_BackIcon.Name = "Login_BackIcon";
             this.Login_BackIcon.Size = new System.Drawing.Size(42, 37);
             this.Login_BackIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
