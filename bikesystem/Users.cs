@@ -15,6 +15,8 @@ namespace bikesystem
         public Users()
         {
             InitializeComponent();
+            Con = new Functions();
+            ShowUsers();
         }
 
         private void ItemsManagementHeader_Click(object sender, EventArgs e)
@@ -41,10 +43,47 @@ namespace bikesystem
         {
 
         }
-
+        Functions Con;
+        private void ShowUsers()
+        {
+            try
+            {
+                string Query = "select * from UserTbl";
+                UsersDGV.DataSource = Con.GetData(Query);
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+            
+        }
         private void AddItemButton_Click(object sender, EventArgs e)
         {
+            if (NameTb.Text == "" || PhoneTb.Text == "" || UNameTb.Text == "" || AddressTb.Text == "" || PassWordTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Name = NameTb.Text;
+                    String UName = UNameTb.Text;
+                    String Password = PassWordTb.Text;
+                    String Address = AddressTb.Text;
+                    String Phone = PhoneTb.Text;
+                    String Query = "insert into UserTbl values('{0}','{1}','{2}','{3}','{4}')";
+                    Query = string.Format(Query, Name, UName, Password, Phone, Address);
+                    Con.SetData(Query);
+                    ShowUsers();
+                    MessageBox.Show("Success!!!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
 
+            }
         }
 
         private void QuantityBox_TextChanged(object sender, EventArgs e)
