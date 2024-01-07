@@ -17,7 +17,7 @@ namespace bikesystem
         private string ConStr;
         public Functions()
         {
-            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tekno\OneDrive\Belgeler\BikeDb.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True";
+            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tekno\OneDrive\Belgeler\BikeDb.mdf;Integrated Security=True;Connect Timeout=30;";
             Con = new SqlConnection(ConStr);
             Cmd = new SqlCommand();
             Cmd.Connection = Con;

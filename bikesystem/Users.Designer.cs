@@ -200,7 +200,7 @@
             this.AddressTb.PlaceholderText = "Address";
             this.AddressTb.SelectedText = "";
             this.AddressTb.Size = new System.Drawing.Size(283, 40);
-            this.AddressTb.TabIndex = 22;
+            this.AddressTb.TabIndex = 4;
             this.AddressTb.TextChanged += new System.EventHandler(this.QuantityBox_TextChanged);
             // 
             // PhoneTb
@@ -221,7 +221,7 @@
             this.PhoneTb.PlaceholderText = "Phone";
             this.PhoneTb.SelectedText = "";
             this.PhoneTb.Size = new System.Drawing.Size(283, 40);
-            this.PhoneTb.TabIndex = 21;
+            this.PhoneTb.TabIndex = 3;
             this.PhoneTb.TextChanged += new System.EventHandler(this.ItemDetailsBox_TextChanged);
             // 
             // PassWordTb
@@ -242,7 +242,7 @@
             this.PassWordTb.PlaceholderText = "Password";
             this.PassWordTb.SelectedText = "";
             this.PassWordTb.Size = new System.Drawing.Size(283, 40);
-            this.PassWordTb.TabIndex = 19;
+            this.PassWordTb.TabIndex = 2;
             this.PassWordTb.TextChanged += new System.EventHandler(this.ItemCategoryBox_TextChanged);
             // 
             // NameTb
@@ -263,7 +263,7 @@
             this.NameTb.PlaceholderText = "Name";
             this.NameTb.SelectedText = "";
             this.NameTb.Size = new System.Drawing.Size(283, 40);
-            this.NameTb.TabIndex = 18;
+            this.NameTb.TabIndex = 0;
             this.NameTb.TextChanged += new System.EventHandler(this.ItemNameBox_TextChanged);
             // 
             // UsersManagementHeader
@@ -443,7 +443,7 @@
             this.UNameTb.PlaceholderText = "Username";
             this.UNameTb.SelectedText = "";
             this.UNameTb.Size = new System.Drawing.Size(283, 40);
-            this.UNameTb.TabIndex = 20;
+            this.UNameTb.TabIndex = 1;
             this.UNameTb.TextChanged += new System.EventHandler(this.ItemPriceBox_TextChanged);
             // 
             // BackIcon
