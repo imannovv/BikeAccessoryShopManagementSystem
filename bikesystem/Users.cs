@@ -24,9 +24,22 @@ namespace bikesystem
 
         }
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        int Key = 0;
+        private void UsersDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            NameTb.Text = UsersDGV.SelectedRows[0].Cells[1].Value.ToString();
+            UNameTb.Text = UsersDGV.SelectedRows[0].Cells[2].Value.ToString();
+            PassWordTb.Text = UsersDGV.SelectedRows[0].Cells[3].Value.ToString();
+            PhoneTb.Text = UsersDGV.SelectedRows[0].Cells[4].Value.ToString();
+            AddressTb.Text = UsersDGV.SelectedRows[0].Cells[5].Value.ToString();
+            if (NameTb.Text == "")
+            {
+                Key = 0;
+            }
+            else 
+            {
+                Key = Convert.ToInt32(UsersDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void GunaPanel_Paint(object sender, PaintEventArgs e)
@@ -34,15 +47,69 @@ namespace bikesystem
 
         }
 
-        private void DeleteItemButton_Click(object sender, EventArgs e)
+        private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select a User!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "delete from UserTbl where UCode = '{0}'";
+                    Query = string.Format(Query, Key);
+                    Con.SetData(Query);
+                    ShowUsers();
+                    MessageBox.Show("Success!!!");
+                    NameTb.Text = "";
+                    UNameTb.Text = "";
+                    PassWordTb.Text = "";
+                    PhoneTb.Text = "";
+                    AddressTb.Text = "";
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
 
+            }
         }
 
-        private void EditItemButton_Click(object sender, EventArgs e)
+        private void EditBtn_Click(object sender, EventArgs e)
         {
+            if (NameTb.Text == "" || PhoneTb.Text == "" || UNameTb.Text == "" || AddressTb.Text == "" || PassWordTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Name = NameTb.Text;
+                    String UName = UNameTb.Text;
+                    String Password = PassWordTb.Text;
+                    String Address = AddressTb.Text;
+                    String Phone = PhoneTb.Text;
+                    String Query = "update UserTbl set Name = '{0}',UName = '{1}',Password = '{2}',Phone = '{3}',Address = '{4}' where UCode = '{5}'";
+                    Query = string.Format(Query, Name, UName, Password, Phone, Address, Key);
+                    Con.SetData(Query);
+                    ShowUsers();
+                    MessageBox.Show("Success!!!");
+                    NameTb.Text = "";
+                    UNameTb.Text = "";
+                    PassWordTb.Text = "";
+                    PhoneTb.Text = "";
+                    AddressTb.Text = "";
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
 
+            }
         }
+
         Functions Con;
         private void ShowUsers()
         {
@@ -57,7 +124,7 @@ namespace bikesystem
             }
             
         }
-        private void AddItemButton_Click(object sender, EventArgs e)
+        private void AddBtn_Click(object sender, EventArgs e)
         {
             if (NameTb.Text == "" || PhoneTb.Text == "" || UNameTb.Text == "" || AddressTb.Text == "" || PassWordTb.Text == "")
             {

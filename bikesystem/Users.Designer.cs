@@ -117,7 +117,7 @@
             this.UsersDGV.ThemeStyle.RowsStyle.Height = 22;
             this.UsersDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.UsersDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.UsersDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            this.UsersDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersDGV_CellContentClick);
             // 
             // GunaPanel
             // 
@@ -146,7 +146,7 @@
             this.DeleteBtn.Size = new System.Drawing.Size(150, 45);
             this.DeleteBtn.TabIndex = 25;
             this.DeleteBtn.Text = "Delete User";
-            this.DeleteBtn.Click += new System.EventHandler(this.DeleteItemButton_Click);
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // EditBtn
             // 
@@ -163,7 +163,7 @@
             this.EditBtn.Size = new System.Drawing.Size(150, 45);
             this.EditBtn.TabIndex = 24;
             this.EditBtn.Text = "Edit User";
-            this.EditBtn.Click += new System.EventHandler(this.EditItemButton_Click);
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // AddBtn
             // 
@@ -180,7 +180,7 @@
             this.AddBtn.Size = new System.Drawing.Size(150, 45);
             this.AddBtn.TabIndex = 23;
             this.AddBtn.Text = "Add User";
-            this.AddBtn.Click += new System.EventHandler(this.AddItemButton_Click);
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // AddressTb
             // 
