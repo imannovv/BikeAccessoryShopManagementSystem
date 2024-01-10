@@ -23,7 +23,7 @@ namespace bikesystem
         {
 
         }
-
+        
         int Key = 0;
         private void UsersDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -57,7 +57,7 @@ namespace bikesystem
             {
                 try
                 {
-                    String Query = "delete from UserTbl where UCode = '{0}'";
+                    String Query = "delete from UserTbl where UCode = {0}";
                     Query = string.Format(Query, Key);
                     Con.SetData(Query);
                     ShowUsers();
@@ -91,7 +91,7 @@ namespace bikesystem
                     String Password = PassWordTb.Text;
                     String Address = AddressTb.Text;
                     String Phone = PhoneTb.Text;
-                    String Query = "update UserTbl set Name = '{0}',UName = '{1}',Password = '{2}',Phone = '{3}',Address = '{4}' where UCode = '{5}'";
+                    String Query = "update UserTbl set Name = '{0}',UName = '{1}',Password = '{2}',Phone = '{3}',Address = '{4}' where UCode = {5}";
                     Query = string.Format(Query, Name, UName, Password, Phone, Address, Key);
                     Con.SetData(Query);
                     ShowUsers();

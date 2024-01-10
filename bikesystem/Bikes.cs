@@ -80,23 +80,6 @@ namespace bikesystem
         }
 
         int Key = 0;
-        private void ItemsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            NameTb.Text = ItemsDGV.SelectedRows[0].Cells[1].Value.ToString();
-            PriceTb.Text = ItemsDGV.SelectedRows[0].Cells[2].Value.ToString();
-            CategoryTb.Text = ItemsDGV.SelectedRows[0].Cells[3].Value.ToString();
-            DetailsTb.Text = ItemsDGV.SelectedRows[0].Cells[4].Value.ToString();
-            QtyTb.Text = ItemsDGV.SelectedRows[0].Cells[5].Value.ToString();
-            if (NameTb.Text == "")
-            {
-                Key = 0;
-            }
-            else
-            {
-                Key = Convert.ToInt32(ItemsDGV.SelectedRows[0].Cells[0].Value.ToString());
-            }
-        }
-
         int User = 1;
         private void AddBtn_Click(object sender, EventArgs e)
         {
@@ -124,6 +107,70 @@ namespace bikesystem
                     MessageBox.Show(Ex.Message);
                 }
 
+            }
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String Name = NameTb.Text;
+                String Price = PriceTb.Text;
+                String Cat = CategoryTb.Text;
+                String Details = DetailsTb.Text;
+                String Qty = QtyTb.Text;
+                String Query = "update ItemTbl set ItName = '{0}',ItPrice = {1},ItCategory = '{2}',ItDetails = '{3}',AddedBy = '{4}',Qty = {5} where ItCode = {6}";
+                Query = string.Format(Query, Name, Price, Cat, Details, User, Qty, Key);
+                Con.SetData(Query);
+                ShowItems();
+                MessageBox.Show("Success!!!");
+                NameTb.Text = "";
+                PriceTb.Text = "";
+                CategoryTb.Text = "";
+                DetailsTb.Text = "";
+                QtyTb.Text = "";
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String Query = "delete from ItemTbl where ItCode = {0}";
+                Query = string.Format(Query, Key);
+                Con.SetData(Query);
+                ShowItems();
+                MessageBox.Show("Success!!!");
+                NameTb.Text = "";
+                PriceTb.Text = "";
+                CategoryTb.Text = "";
+                DetailsTb.Text = "";
+                QtyTb.Text = "";
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void ItemsDGV_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            NameTb.Text = ItemsDGV.SelectedRows[0].Cells[1].Value.ToString();
+            PriceTb.Text = ItemsDGV.SelectedRows[0].Cells[2].Value.ToString();
+            CategoryTb.Text = ItemsDGV.SelectedRows[0].Cells[3].Value.ToString();
+            DetailsTb.Text = ItemsDGV.SelectedRows[0].Cells[4].Value.ToString();
+            QtyTb.Text = ItemsDGV.SelectedRows[0].Cells[5].Value.ToString();
+            if (NameTb.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(ItemsDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
     }
