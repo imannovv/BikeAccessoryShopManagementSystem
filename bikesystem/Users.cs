@@ -173,9 +173,9 @@ namespace bikesystem
 
         }
 
-        private void BackIcon_Click(object sender, EventArgs e)
+        private void ExitIcon_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -191,6 +191,13 @@ namespace bikesystem
         private void ItemPriceBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
         }
     }
 }

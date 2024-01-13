@@ -55,7 +55,7 @@
             this.HeaderText = new System.Windows.Forms.Label();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.UNameTb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.BackIcon = new System.Windows.Forms.PictureBox();
+            this.ExitIcon = new System.Windows.Forms.PictureBox();
             this.ItemsManagementIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.UsersDGV)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,7 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.User2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BikeStoreIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -313,6 +313,7 @@
             this.LogOutButton.Text = "Logout";
             this.LogOutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogOutButton.UseVisualStyleBackColor = false;
+            this.LogOutButton.Click += new System.EventHandler(this.LogOutButton_Click);
             // 
             // LogOutIcon
             // 
@@ -447,17 +448,17 @@
             this.UNameTb.TabIndex = 1;
             this.UNameTb.TextChanged += new System.EventHandler(this.ItemPriceBox_TextChanged);
             // 
-            // BackIcon
+            // ExitIcon
             // 
-            this.BackIcon.BackColor = System.Drawing.Color.Transparent;
-            this.BackIcon.Image = global::bikesystem.Properties.Resources.icons8_back_64;
-            this.BackIcon.Location = new System.Drawing.Point(1472, 0);
-            this.BackIcon.Name = "BackIcon";
-            this.BackIcon.Size = new System.Drawing.Size(50, 46);
-            this.BackIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BackIcon.TabIndex = 28;
-            this.BackIcon.TabStop = false;
-            this.BackIcon.Click += new System.EventHandler(this.BackIcon_Click);
+            this.ExitIcon.BackColor = System.Drawing.Color.Transparent;
+            this.ExitIcon.Image = global::bikesystem.Properties.Resources.icons8_back_64;
+            this.ExitIcon.Location = new System.Drawing.Point(1472, 0);
+            this.ExitIcon.Name = "ExitIcon";
+            this.ExitIcon.Size = new System.Drawing.Size(50, 46);
+            this.ExitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ExitIcon.TabIndex = 28;
+            this.ExitIcon.TabStop = false;
+            this.ExitIcon.Click += new System.EventHandler(this.ExitIcon_Click);
             // 
             // ItemsManagementIcon
             // 
@@ -477,7 +478,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1520, 856);
-            this.Controls.Add(this.BackIcon);
+            this.Controls.Add(this.ExitIcon);
             this.Controls.Add(this.UsersDGV);
             this.Controls.Add(this.GunaPanel);
             this.Controls.Add(this.DeleteBtn);
@@ -505,7 +506,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.User2Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BikeStoreIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsManagementIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -518,7 +519,7 @@
         private System.Windows.Forms.PictureBox BillsIcon;
         private System.Windows.Forms.PictureBox User2Icon;
         private System.Windows.Forms.PictureBox BikeStoreIcon;
-        private System.Windows.Forms.PictureBox BackIcon;
+        private System.Windows.Forms.PictureBox ExitIcon;
         private Guna.UI2.WinForms.Guna2DataGridView UsersDGV;
         private Guna.UI2.WinForms.Guna2Panel GunaPanel;
         private Guna.UI2.WinForms.Guna2Button DeleteBtn;

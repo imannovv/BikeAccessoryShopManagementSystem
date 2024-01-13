@@ -113,7 +113,7 @@
             this.PasswordTb.Location = new System.Drawing.Point(300, 223);
             this.PasswordTb.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.PasswordTb.Name = "PasswordTb";
-            this.PasswordTb.PasswordChar = '\0';
+            this.PasswordTb.PasswordChar = '*';
             this.PasswordTb.PlaceholderText = "Password";
             this.PasswordTb.SelectedText = "";
             this.PasswordTb.Size = new System.Drawing.Size(252, 40);

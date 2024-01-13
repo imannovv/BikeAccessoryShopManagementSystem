@@ -173,5 +173,17 @@ namespace bikesystem
                 Key = Convert.ToInt32(ItemsDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void BillsButton_Click(object sender, EventArgs e)
+        {
+            Billing Obj = new Billing();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void ExitIcon_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

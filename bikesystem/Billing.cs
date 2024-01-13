@@ -17,6 +17,8 @@ namespace bikesystem
             InitializeComponent();
             Con = new Functions();
             ShowItems();
+            ULabel.Text = Login.SName;
+            GrdTotalbl.Visible = false; 
         }
 
         Functions Con;
@@ -108,9 +110,34 @@ namespace bikesystem
 
         }
 
+        int n = 0;
+        int GrdTotal = 0;
         private void AddBtn_Click(object sender, EventArgs e)
         {
-
+            if (QtyTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!!");
+            } 
+            else if (Convert.ToInt32(QtyTb.Text) > Stock)
+            {
+                MessageBox.Show("Not Enough Stock!!!");
+            }
+            else
+            {
+                int total = Convert.ToInt32(QtyTb.Text) * Convert.ToInt32(AmountTb.Text);
+                DataGridViewRow newRow = new DataGridViewRow();
+                newRow.CreateCells(BillDGV);
+                newRow.Cells[0].Value = n + 1;
+                newRow.Cells[1].Value = NameTb.Text;
+                newRow.Cells[2].Value = AmountTb.Text;
+                newRow.Cells[3].Value = QtyTb.Text;
+                newRow.Cells[4].Value = total + "$";
+                BillDGV.Rows.Add(newRow);
+                n++;
+                GrdTotal = GrdTotal + total;
+                GrdTotalbl.Visible = true;
+                GrdTotalbl.Text = GrdTotal + "$";
+            }
         }
 
         int Key = Login.SKey;
@@ -141,7 +168,21 @@ namespace bikesystem
 
         private void AccessoriesButton_Click(object sender, EventArgs e)
         {
+            Bikes Obj = new Bikes();
+            Obj.Show();
+            this.Hide();
+        }
 
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void ExitIcon_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
