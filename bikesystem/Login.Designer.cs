@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Login_BikeAccessoriesIcon = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Login_BikeAccoriesSystem = new System.Windows.Forms.Label();
-            this.Login_BikeAccessoriesIcon = new System.Windows.Forms.PictureBox();
-            this.Login_UserNameBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Login_PasswordBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Login_LoginButton = new Guna.UI2.WinForms.Guna2Button();
+            this.NameTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PasswordTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.LoginBtn = new Guna.UI2.WinForms.Guna2Button();
             this.Login_BackIcon = new System.Windows.Forms.PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Login_BikeAccessoriesIcon)).BeginInit();
@@ -51,6 +51,17 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(217, 453);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // Login_BikeAccessoriesIcon
+            // 
+            this.Login_BikeAccessoriesIcon.BackColor = System.Drawing.Color.Transparent;
+            this.Login_BikeAccessoriesIcon.Image = global::bikesystem.Properties.Resources.icons8_scooter_60;
+            this.Login_BikeAccessoriesIcon.Location = new System.Drawing.Point(85, 192);
+            this.Login_BikeAccessoriesIcon.Name = "Login_BikeAccessoriesIcon";
+            this.Login_BikeAccessoriesIcon.Size = new System.Drawing.Size(50, 46);
+            this.Login_BikeAccessoriesIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Login_BikeAccessoriesIcon.TabIndex = 32;
+            this.Login_BikeAccessoriesIcon.TabStop = false;
             // 
             // guna2Elipse1
             // 
@@ -68,72 +79,62 @@
             this.Login_BikeAccoriesSystem.TabIndex = 31;
             this.Login_BikeAccoriesSystem.Text = "Bike Accessories System";
             // 
-            // Login_BikeAccessoriesIcon
+            // NameTb
             // 
-            this.Login_BikeAccessoriesIcon.BackColor = System.Drawing.Color.Transparent;
-            this.Login_BikeAccessoriesIcon.Image = global::bikesystem.Properties.Resources.icons8_scooter_60;
-            this.Login_BikeAccessoriesIcon.Location = new System.Drawing.Point(85, 192);
-            this.Login_BikeAccessoriesIcon.Name = "Login_BikeAccessoriesIcon";
-            this.Login_BikeAccessoriesIcon.Size = new System.Drawing.Size(50, 46);
-            this.Login_BikeAccessoriesIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Login_BikeAccessoriesIcon.TabIndex = 32;
-            this.Login_BikeAccessoriesIcon.TabStop = false;
+            this.NameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NameTb.DefaultText = "";
+            this.NameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NameTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NameTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NameTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NameTb.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.NameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NameTb.Location = new System.Drawing.Point(300, 158);
+            this.NameTb.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.NameTb.Name = "NameTb";
+            this.NameTb.PasswordChar = '\0';
+            this.NameTb.PlaceholderText = "User Name";
+            this.NameTb.SelectedText = "";
+            this.NameTb.Size = new System.Drawing.Size(252, 40);
+            this.NameTb.TabIndex = 33;
             // 
-            // Login_UserNameBox
+            // PasswordTb
             // 
-            this.Login_UserNameBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Login_UserNameBox.DefaultText = "";
-            this.Login_UserNameBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Login_UserNameBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Login_UserNameBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Login_UserNameBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Login_UserNameBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Login_UserNameBox.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Login_UserNameBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Login_UserNameBox.Location = new System.Drawing.Point(300, 158);
-            this.Login_UserNameBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Login_UserNameBox.Name = "Login_UserNameBox";
-            this.Login_UserNameBox.PasswordChar = '\0';
-            this.Login_UserNameBox.PlaceholderText = "User Name";
-            this.Login_UserNameBox.SelectedText = "";
-            this.Login_UserNameBox.Size = new System.Drawing.Size(252, 40);
-            this.Login_UserNameBox.TabIndex = 33;
+            this.PasswordTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTb.DefaultText = "";
+            this.PasswordTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTb.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PasswordTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTb.Location = new System.Drawing.Point(300, 223);
+            this.PasswordTb.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.PasswordChar = '\0';
+            this.PasswordTb.PlaceholderText = "Password";
+            this.PasswordTb.SelectedText = "";
+            this.PasswordTb.Size = new System.Drawing.Size(252, 40);
+            this.PasswordTb.TabIndex = 34;
             // 
-            // Login_PasswordBox
+            // LoginBtn
             // 
-            this.Login_PasswordBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Login_PasswordBox.DefaultText = "";
-            this.Login_PasswordBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Login_PasswordBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Login_PasswordBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Login_PasswordBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Login_PasswordBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Login_PasswordBox.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Login_PasswordBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Login_PasswordBox.Location = new System.Drawing.Point(300, 223);
-            this.Login_PasswordBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Login_PasswordBox.Name = "Login_PasswordBox";
-            this.Login_PasswordBox.PasswordChar = '\0';
-            this.Login_PasswordBox.PlaceholderText = "Password";
-            this.Login_PasswordBox.SelectedText = "";
-            this.Login_PasswordBox.Size = new System.Drawing.Size(252, 40);
-            this.Login_PasswordBox.TabIndex = 34;
-            // 
-            // Login_LoginButton
-            // 
-            this.Login_LoginButton.BorderRadius = 12;
-            this.Login_LoginButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Login_LoginButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Login_LoginButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Login_LoginButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Login_LoginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(180)))), ((int)(((byte)(137)))));
-            this.Login_LoginButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Login_LoginButton.ForeColor = System.Drawing.Color.Black;
-            this.Login_LoginButton.Location = new System.Drawing.Point(300, 297);
-            this.Login_LoginButton.Name = "Login_LoginButton";
-            this.Login_LoginButton.Size = new System.Drawing.Size(252, 45);
-            this.Login_LoginButton.TabIndex = 35;
-            this.Login_LoginButton.Text = "Login";
+            this.LoginBtn.BorderRadius = 12;
+            this.LoginBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LoginBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LoginBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LoginBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LoginBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(180)))), ((int)(((byte)(137)))));
+            this.LoginBtn.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LoginBtn.ForeColor = System.Drawing.Color.Black;
+            this.LoginBtn.Location = new System.Drawing.Point(300, 297);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(252, 45);
+            this.LoginBtn.TabIndex = 35;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // Login_BackIcon
             // 
@@ -145,6 +146,7 @@
             this.Login_BackIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Login_BackIcon.TabIndex = 36;
             this.Login_BackIcon.TabStop = false;
+            this.Login_BackIcon.Click += new System.EventHandler(this.Login_BackIcon_Click);
             // 
             // Login
             // 
@@ -153,9 +155,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(637, 453);
             this.Controls.Add(this.Login_BackIcon);
-            this.Controls.Add(this.Login_LoginButton);
-            this.Controls.Add(this.Login_PasswordBox);
-            this.Controls.Add(this.Login_UserNameBox);
+            this.Controls.Add(this.LoginBtn);
+            this.Controls.Add(this.PasswordTb);
+            this.Controls.Add(this.NameTb);
             this.Controls.Add(this.Login_BikeAccoriesSystem);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -178,9 +180,9 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label Login_BikeAccoriesSystem;
         private System.Windows.Forms.PictureBox Login_BikeAccessoriesIcon;
-        private Guna.UI2.WinForms.Guna2TextBox Login_PasswordBox;
-        private Guna.UI2.WinForms.Guna2TextBox Login_UserNameBox;
+        private Guna.UI2.WinForms.Guna2TextBox PasswordTb;
+        private Guna.UI2.WinForms.Guna2TextBox NameTb;
         private System.Windows.Forms.PictureBox Login_BackIcon;
-        private Guna.UI2.WinForms.Guna2Button Login_LoginButton;
+        private Guna.UI2.WinForms.Guna2Button LoginBtn;
     }
 }

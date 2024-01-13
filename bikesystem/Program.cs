@@ -16,7 +16,7 @@ namespace bikesystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bikes());
+            Application.Run(new Login());
         }
     }
 }

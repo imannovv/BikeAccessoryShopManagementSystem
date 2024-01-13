@@ -80,7 +80,7 @@ namespace bikesystem
         }
 
         int Key = 0;
-        int User = 1;
+        int User = Login.SKey;
         private void AddBtn_Click(object sender, EventArgs e)
         {
             if (NameTb.Text == "" || PriceTb.Text == "" || CategoryTb.Text == "" || DetailsTb.Text == "" || QtyTb.Text == "")
