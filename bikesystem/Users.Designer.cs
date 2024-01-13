@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.UsersDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.GunaPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.DeleteBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -70,26 +70,26 @@
             // 
             // UsersDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.UsersDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.UsersDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.UsersDGV.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.UsersDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UsersDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.UsersDGV.ColumnHeadersHeight = 30;
             this.UsersDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.UsersDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.UsersDGV.DefaultCellStyle = dataGridViewCellStyle15;
             this.UsersDGV.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.UsersDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.UsersDGV.Location = new System.Drawing.Point(624, 126);
@@ -109,7 +109,7 @@
             this.UsersDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.UsersDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.UsersDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.UsersDGV.ThemeStyle.HeaderStyle.Height = 4;
+            this.UsersDGV.ThemeStyle.HeaderStyle.Height = 30;
             this.UsersDGV.ThemeStyle.ReadOnly = false;
             this.UsersDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.UsersDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -145,7 +145,7 @@
             this.DeleteBtn.Location = new System.Drawing.Point(323, 631);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(150, 45);
-            this.DeleteBtn.TabIndex = 25;
+            this.DeleteBtn.TabIndex = 7;
             this.DeleteBtn.Text = "Delete User";
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
@@ -162,7 +162,7 @@
             this.EditBtn.Location = new System.Drawing.Point(417, 570);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(150, 45);
-            this.EditBtn.TabIndex = 24;
+            this.EditBtn.TabIndex = 6;
             this.EditBtn.Text = "Edit User";
             this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
@@ -179,7 +179,7 @@
             this.AddBtn.Location = new System.Drawing.Point(236, 570);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(150, 45);
-            this.AddBtn.TabIndex = 23;
+            this.AddBtn.TabIndex = 5;
             this.AddBtn.Text = "Add User";
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
@@ -301,7 +301,7 @@
             // 
             // LogOutButton
             // 
-            this.LogOutButton.BackColor = System.Drawing.Color.Transparent;
+            this.LogOutButton.BackColor = System.Drawing.Color.Black;
             this.LogOutButton.FlatAppearance.BorderSize = 0;
             this.LogOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogOutButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -309,7 +309,7 @@
             this.LogOutButton.Location = new System.Drawing.Point(81, 796);
             this.LogOutButton.Name = "LogOutButton";
             this.LogOutButton.Size = new System.Drawing.Size(82, 36);
-            this.LogOutButton.TabIndex = 11;
+            this.LogOutButton.TabIndex = 3;
             this.LogOutButton.Text = "Logout";
             this.LogOutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogOutButton.UseVisualStyleBackColor = false;
@@ -328,7 +328,7 @@
             // 
             // BillsButton
             // 
-            this.BillsButton.BackColor = System.Drawing.Color.Transparent;
+            this.BillsButton.BackColor = System.Drawing.Color.Black;
             this.BillsButton.FlatAppearance.BorderSize = 0;
             this.BillsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BillsButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -336,10 +336,11 @@
             this.BillsButton.Location = new System.Drawing.Point(81, 449);
             this.BillsButton.Name = "BillsButton";
             this.BillsButton.Size = new System.Drawing.Size(63, 36);
-            this.BillsButton.TabIndex = 9;
+            this.BillsButton.TabIndex = 2;
             this.BillsButton.Text = "Bills";
             this.BillsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BillsButton.UseVisualStyleBackColor = false;
+            this.BillsButton.Click += new System.EventHandler(this.BillsButton_Click);
             // 
             // BillsIcon
             // 
@@ -354,7 +355,7 @@
             // 
             // Users_UsersButton
             // 
-            this.Users_UsersButton.BackColor = System.Drawing.Color.Transparent;
+            this.Users_UsersButton.BackColor = System.Drawing.Color.Black;
             this.Users_UsersButton.FlatAppearance.BorderSize = 0;
             this.Users_UsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Users_UsersButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -362,7 +363,7 @@
             this.Users_UsersButton.Location = new System.Drawing.Point(81, 359);
             this.Users_UsersButton.Name = "Users_UsersButton";
             this.Users_UsersButton.Size = new System.Drawing.Size(63, 36);
-            this.Users_UsersButton.TabIndex = 7;
+            this.Users_UsersButton.TabIndex = 1;
             this.Users_UsersButton.Text = "Users";
             this.Users_UsersButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Users_UsersButton.UseVisualStyleBackColor = false;
@@ -380,7 +381,7 @@
             // 
             // AccessoriesButton
             // 
-            this.AccessoriesButton.BackColor = System.Drawing.Color.Transparent;
+            this.AccessoriesButton.BackColor = System.Drawing.Color.Black;
             this.AccessoriesButton.FlatAppearance.BorderSize = 0;
             this.AccessoriesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AccessoriesButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -388,10 +389,11 @@
             this.AccessoriesButton.Location = new System.Drawing.Point(81, 270);
             this.AccessoriesButton.Name = "AccessoriesButton";
             this.AccessoriesButton.Size = new System.Drawing.Size(119, 36);
-            this.AccessoriesButton.TabIndex = 3;
+            this.AccessoriesButton.TabIndex = 0;
             this.AccessoriesButton.Text = "Accessories";
             this.AccessoriesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AccessoriesButton.UseVisualStyleBackColor = false;
+            this.AccessoriesButton.Click += new System.EventHandler(this.AccessoriesButton_Click);
             // 
             // AccessoriesIcon
             // 

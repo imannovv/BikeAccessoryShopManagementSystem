@@ -29,14 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.BillDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AmountTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2AnimateWindow2 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.LogOutButton = new System.Windows.Forms.Button();
@@ -63,11 +68,6 @@
             this.ClientBill = new System.Windows.Forms.Label();
             this.ItemsDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.QtyTb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ULabel = new System.Windows.Forms.Label();
             this.GrdTotalbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BillDGV)).BeginInit();
@@ -84,16 +84,16 @@
             // 
             // BillDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.BillDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.BillDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
+            this.BillDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.BillDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.BillDGV.ColumnHeadersHeight = 32;
             this.BillDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.BillDGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -102,14 +102,14 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BillDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BillDGV.DefaultCellStyle = dataGridViewCellStyle33;
             this.BillDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.BillDGV.Location = new System.Drawing.Point(811, 126);
             this.BillDGV.Name = "BillDGV";
@@ -139,6 +139,31 @@
             this.BillDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.BillDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Num";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Items";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Price";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Quantity";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Total";
+            this.Column5.Name = "Column5";
+            // 
             // AmountTb
             // 
             this.AmountTb.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -158,11 +183,11 @@
             this.AmountTb.PlaceholderText = "Amount";
             this.AmountTb.SelectedText = "";
             this.AmountTb.Size = new System.Drawing.Size(181, 40);
-            this.AmountTb.TabIndex = 34;
+            this.AmountTb.TabIndex = 1;
             // 
             // LogOutButton
             // 
-            this.LogOutButton.BackColor = System.Drawing.Color.Transparent;
+            this.LogOutButton.BackColor = System.Drawing.Color.Black;
             this.LogOutButton.FlatAppearance.BorderSize = 0;
             this.LogOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogOutButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -170,7 +195,7 @@
             this.LogOutButton.Location = new System.Drawing.Point(81, 796);
             this.LogOutButton.Name = "LogOutButton";
             this.LogOutButton.Size = new System.Drawing.Size(82, 36);
-            this.LogOutButton.TabIndex = 11;
+            this.LogOutButton.TabIndex = 1;
             this.LogOutButton.Text = "Logout";
             this.LogOutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogOutButton.UseVisualStyleBackColor = false;
@@ -178,7 +203,7 @@
             // 
             // BillsButton
             // 
-            this.BillsButton.BackColor = System.Drawing.Color.Transparent;
+            this.BillsButton.BackColor = System.Drawing.Color.Black;
             this.BillsButton.FlatAppearance.BorderSize = 0;
             this.BillsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BillsButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -234,7 +259,7 @@
             // 
             // Bills_UsersButton
             // 
-            this.Bills_UsersButton.BackColor = System.Drawing.Color.Transparent;
+            this.Bills_UsersButton.BackColor = System.Drawing.Color.Black;
             this.Bills_UsersButton.FlatAppearance.BorderSize = 0;
             this.Bills_UsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bills_UsersButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -260,7 +285,7 @@
             // 
             // AccessoriesButton
             // 
-            this.AccessoriesButton.BackColor = System.Drawing.Color.Transparent;
+            this.AccessoriesButton.BackColor = System.Drawing.Color.Black;
             this.AccessoriesButton.FlatAppearance.BorderSize = 0;
             this.AccessoriesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AccessoriesButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -268,7 +293,7 @@
             this.AccessoriesButton.Location = new System.Drawing.Point(81, 270);
             this.AccessoriesButton.Name = "AccessoriesButton";
             this.AccessoriesButton.Size = new System.Drawing.Size(119, 36);
-            this.AccessoriesButton.TabIndex = 3;
+            this.AccessoriesButton.TabIndex = 0;
             this.AccessoriesButton.Text = "Accessories";
             this.AccessoriesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AccessoriesButton.UseVisualStyleBackColor = false;
@@ -327,7 +352,7 @@
             this.NameTb.PlaceholderText = "Name";
             this.NameTb.SelectedText = "";
             this.NameTb.Size = new System.Drawing.Size(252, 40);
-            this.NameTb.TabIndex = 32;
+            this.NameTb.TabIndex = 0;
             // 
             // ResetBtn
             // 
@@ -339,10 +364,10 @@
             this.ResetBtn.FillColor = System.Drawing.Color.Crimson;
             this.ResetBtn.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ResetBtn.ForeColor = System.Drawing.Color.White;
-            this.ResetBtn.Location = new System.Drawing.Point(554, 345);
+            this.ResetBtn.Location = new System.Drawing.Point(554, 366);
             this.ResetBtn.Name = "ResetBtn";
             this.ResetBtn.Size = new System.Drawing.Size(181, 45);
-            this.ResetBtn.TabIndex = 39;
+            this.ResetBtn.TabIndex = 6;
             this.ResetBtn.Text = "Reset";
             this.ResetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
@@ -356,10 +381,10 @@
             this.AddBtn.FillColor = System.Drawing.Color.Black;
             this.AddBtn.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AddBtn.ForeColor = System.Drawing.Color.White;
-            this.AddBtn.Location = new System.Drawing.Point(256, 345);
+            this.AddBtn.Location = new System.Drawing.Point(256, 366);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(252, 45);
-            this.AddBtn.TabIndex = 38;
+            this.AddBtn.TabIndex = 5;
             this.AddBtn.Text = "Add to Bill";
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
@@ -393,10 +418,10 @@
             "Cash",
             "Card",
             "Bank"});
-            this.PMethodTb.Location = new System.Drawing.Point(554, 247);
+            this.PMethodTb.Location = new System.Drawing.Point(554, 253);
             this.PMethodTb.Name = "PMethodTb";
             this.PMethodTb.Size = new System.Drawing.Size(181, 36);
-            this.PMethodTb.TabIndex = 43;
+            this.PMethodTb.TabIndex = 3;
             this.PMethodTb.Text = "Payment Method";
             // 
             // BDateTb
@@ -406,12 +431,12 @@
             this.BDateTb.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BDateTb.ForeColor = System.Drawing.Color.White;
             this.BDateTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.BDateTb.Location = new System.Drawing.Point(376, 295);
+            this.BDateTb.Location = new System.Drawing.Point(376, 310);
             this.BDateTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.BDateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.BDateTb.Name = "BDateTb";
             this.BDateTb.Size = new System.Drawing.Size(252, 36);
-            this.BDateTb.TabIndex = 44;
+            this.BDateTb.TabIndex = 4;
             this.BDateTb.Value = new System.DateTime(2023, 12, 12, 0, 59, 50, 830);
             // 
             // Bills_ItemsList
@@ -461,26 +486,26 @@
             // 
             // ItemsDGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.ItemsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ItemsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
+            this.ItemsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ItemsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.ItemsDGV.ColumnHeadersHeight = 30;
             this.ItemsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ItemsDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ItemsDGV.DefaultCellStyle = dataGridViewCellStyle36;
             this.ItemsDGV.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.ItemsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ItemsDGV.Location = new System.Drawing.Point(238, 477);
@@ -522,39 +547,14 @@
             this.QtyTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.QtyTb.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.QtyTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.QtyTb.Location = new System.Drawing.Point(256, 243);
+            this.QtyTb.Location = new System.Drawing.Point(256, 249);
             this.QtyTb.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.QtyTb.Name = "QtyTb";
             this.QtyTb.PasswordChar = '\0';
             this.QtyTb.PlaceholderText = "Quantity";
             this.QtyTb.SelectedText = "";
             this.QtyTb.Size = new System.Drawing.Size(252, 40);
-            this.QtyTb.TabIndex = 49;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Num";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Items";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Price";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Quantity";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Total";
-            this.Column5.Name = "Column5";
+            this.QtyTb.TabIndex = 2;
             // 
             // ULabel
             // 

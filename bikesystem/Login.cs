@@ -34,7 +34,7 @@ namespace bikesystem
             }
             else if(NameTb.Text == "Admin" || PasswordTb.Text == "Admin")
             {
-                Bikes obj = new Bikes();
+                Users obj = new Users();
                 obj.Show();
                 this.Hide();
             }
@@ -53,7 +53,7 @@ namespace bikesystem
                 {
                     SName = NameTb.Text;
                     SKey = Convert.ToInt32(dt.Rows[0][0].ToString());
-                    Billing obj = new Billing();
+                    Bikes obj = new Bikes();
                     obj.Show();
                     this.Hide();
                 }

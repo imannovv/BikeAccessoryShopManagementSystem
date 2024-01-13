@@ -97,7 +97,7 @@
             this.NameTb.PlaceholderText = "User Name";
             this.NameTb.SelectedText = "";
             this.NameTb.Size = new System.Drawing.Size(252, 40);
-            this.NameTb.TabIndex = 33;
+            this.NameTb.TabIndex = 0;
             // 
             // PasswordTb
             // 
@@ -117,7 +117,7 @@
             this.PasswordTb.PlaceholderText = "Password";
             this.PasswordTb.SelectedText = "";
             this.PasswordTb.Size = new System.Drawing.Size(252, 40);
-            this.PasswordTb.TabIndex = 34;
+            this.PasswordTb.TabIndex = 1;
             // 
             // LoginBtn
             // 
@@ -132,7 +132,7 @@
             this.LoginBtn.Location = new System.Drawing.Point(300, 297);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(252, 45);
-            this.LoginBtn.TabIndex = 35;
+            this.LoginBtn.TabIndex = 2;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 

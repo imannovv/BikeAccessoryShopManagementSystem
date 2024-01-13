@@ -199,5 +199,19 @@ namespace bikesystem
             Obj.Show();
             this.Hide();
         }
+
+        private void AccessoriesButton_Click(object sender, EventArgs e)
+        {
+            Bikes Obj = new Bikes();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void BillsButton_Click(object sender, EventArgs e)
+        {
+            Billing Obj = new Billing();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

@@ -89,7 +89,7 @@
             // 
             // LogOutButton
             // 
-            this.LogOutButton.BackColor = System.Drawing.Color.Transparent;
+            this.LogOutButton.BackColor = System.Drawing.Color.Black;
             this.LogOutButton.FlatAppearance.BorderSize = 0;
             this.LogOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogOutButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -97,7 +97,7 @@
             this.LogOutButton.Location = new System.Drawing.Point(81, 796);
             this.LogOutButton.Name = "LogOutButton";
             this.LogOutButton.Size = new System.Drawing.Size(82, 36);
-            this.LogOutButton.TabIndex = 11;
+            this.LogOutButton.TabIndex = 1;
             this.LogOutButton.Text = "Logout";
             this.LogOutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogOutButton.UseVisualStyleBackColor = false;
@@ -116,7 +116,7 @@
             // 
             // BillsButton
             // 
-            this.BillsButton.BackColor = System.Drawing.Color.Transparent;
+            this.BillsButton.BackColor = System.Drawing.Color.Black;
             this.BillsButton.FlatAppearance.BorderSize = 0;
             this.BillsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BillsButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -124,7 +124,7 @@
             this.BillsButton.Location = new System.Drawing.Point(81, 449);
             this.BillsButton.Name = "BillsButton";
             this.BillsButton.Size = new System.Drawing.Size(63, 36);
-            this.BillsButton.TabIndex = 9;
+            this.BillsButton.TabIndex = 0;
             this.BillsButton.Text = "Bills";
             this.BillsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BillsButton.UseVisualStyleBackColor = false;
@@ -143,7 +143,7 @@
             // 
             // UsersButton
             // 
-            this.UsersButton.BackColor = System.Drawing.Color.Transparent;
+            this.UsersButton.BackColor = System.Drawing.Color.Black;
             this.UsersButton.FlatAppearance.BorderSize = 0;
             this.UsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UsersButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -169,7 +169,7 @@
             // 
             // AccessoriesButton
             // 
-            this.AccessoriesButton.BackColor = System.Drawing.Color.Transparent;
+            this.AccessoriesButton.BackColor = System.Drawing.Color.Black;
             this.AccessoriesButton.FlatAppearance.BorderSize = 0;
             this.AccessoriesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AccessoriesButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -250,7 +250,7 @@
             this.NameTb.PlaceholderText = "Item Name";
             this.NameTb.SelectedText = "";
             this.NameTb.Size = new System.Drawing.Size(283, 40);
-            this.NameTb.TabIndex = 3;
+            this.NameTb.TabIndex = 0;
             this.NameTb.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // CategoryTb
@@ -271,7 +271,7 @@
             this.CategoryTb.PlaceholderText = "Item Category";
             this.CategoryTb.SelectedText = "";
             this.CategoryTb.Size = new System.Drawing.Size(283, 40);
-            this.CategoryTb.TabIndex = 4;
+            this.CategoryTb.TabIndex = 2;
             // 
             // PriceTb
             // 
@@ -291,7 +291,7 @@
             this.PriceTb.PlaceholderText = "Item Price";
             this.PriceTb.SelectedText = "";
             this.PriceTb.Size = new System.Drawing.Size(283, 40);
-            this.PriceTb.TabIndex = 5;
+            this.PriceTb.TabIndex = 1;
             // 
             // QtyTb
             // 
@@ -311,7 +311,7 @@
             this.QtyTb.PlaceholderText = "Quantity";
             this.QtyTb.SelectedText = "";
             this.QtyTb.Size = new System.Drawing.Size(283, 40);
-            this.QtyTb.TabIndex = 8;
+            this.QtyTb.TabIndex = 4;
             // 
             // DetailsTb
             // 
@@ -331,7 +331,7 @@
             this.DetailsTb.PlaceholderText = "Item Details";
             this.DetailsTb.SelectedText = "";
             this.DetailsTb.Size = new System.Drawing.Size(283, 40);
-            this.DetailsTb.TabIndex = 6;
+            this.DetailsTb.TabIndex = 3;
             // 
             // AddBtn
             // 
@@ -346,7 +346,7 @@
             this.AddBtn.Location = new System.Drawing.Point(237, 570);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(150, 45);
-            this.AddBtn.TabIndex = 9;
+            this.AddBtn.TabIndex = 5;
             this.AddBtn.Text = "Add Item";
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
@@ -363,7 +363,7 @@
             this.EditBtn.Location = new System.Drawing.Point(418, 570);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(150, 45);
-            this.EditBtn.TabIndex = 10;
+            this.EditBtn.TabIndex = 6;
             this.EditBtn.Text = "Edit Item";
             this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
@@ -380,7 +380,7 @@
             this.DeleteBtn.Location = new System.Drawing.Point(324, 631);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(150, 45);
-            this.DeleteBtn.TabIndex = 11;
+            this.DeleteBtn.TabIndex = 7;
             this.DeleteBtn.Text = "Delete Item";
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
