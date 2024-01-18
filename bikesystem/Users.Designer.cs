@@ -130,7 +130,7 @@
             this.GunaPanel.Name = "GunaPanel";
             this.GunaPanel.Size = new System.Drawing.Size(11, 732);
             this.GunaPanel.TabIndex = 26;
-            this.GunaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.GunaPanel_Paint);
+
             // 
             // DeleteBtn
             // 
@@ -202,7 +202,7 @@
             this.AddressTb.SelectedText = "";
             this.AddressTb.Size = new System.Drawing.Size(283, 40);
             this.AddressTb.TabIndex = 4;
-            this.AddressTb.TextChanged += new System.EventHandler(this.QuantityBox_TextChanged);
+
             // 
             // PhoneTb
             // 
@@ -223,7 +223,7 @@
             this.PhoneTb.SelectedText = "";
             this.PhoneTb.Size = new System.Drawing.Size(283, 40);
             this.PhoneTb.TabIndex = 3;
-            this.PhoneTb.TextChanged += new System.EventHandler(this.ItemDetailsBox_TextChanged);
+
             // 
             // PassWordTb
             // 
@@ -244,7 +244,7 @@
             this.PassWordTb.SelectedText = "";
             this.PassWordTb.Size = new System.Drawing.Size(283, 40);
             this.PassWordTb.TabIndex = 2;
-            this.PassWordTb.TextChanged += new System.EventHandler(this.ItemCategoryBox_TextChanged);
+
             // 
             // NameTb
             // 
@@ -265,7 +265,7 @@
             this.NameTb.SelectedText = "";
             this.NameTb.Size = new System.Drawing.Size(283, 40);
             this.NameTb.TabIndex = 0;
-            this.NameTb.TextChanged += new System.EventHandler(this.ItemNameBox_TextChanged);
+
             // 
             // UsersManagementHeader
             // 
@@ -277,7 +277,7 @@
             this.UsersManagementHeader.Size = new System.Drawing.Size(225, 37);
             this.UsersManagementHeader.TabIndex = 16;
             this.UsersManagementHeader.Text = "Users Management";
-            this.UsersManagementHeader.Click += new System.EventHandler(this.ItemsManagementHeader_Click);
+
             // 
             // panel1
             // 
@@ -297,7 +297,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(218, 856);
             this.panel1.TabIndex = 15;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+ 
             // 
             // LogOutButton
             // 
@@ -448,7 +448,7 @@
             this.UNameTb.SelectedText = "";
             this.UNameTb.Size = new System.Drawing.Size(283, 40);
             this.UNameTb.TabIndex = 1;
-            this.UNameTb.TextChanged += new System.EventHandler(this.ItemPriceBox_TextChanged);
+
             // 
             // ExitIcon
             // 
@@ -460,7 +460,7 @@
             this.ExitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ExitIcon.TabIndex = 28;
             this.ExitIcon.TabStop = false;
-            this.ExitIcon.Click += new System.EventHandler(this.ExitIcon_Click);
+
             // 
             // ItemsManagementIcon
             // 
@@ -472,7 +472,7 @@
             this.ItemsManagementIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ItemsManagementIcon.TabIndex = 17;
             this.ItemsManagementIcon.TabStop = false;
-            this.ItemsManagementIcon.Click += new System.EventHandler(this.ItemsManagementIcon_Click);
+   
             // 
             // Users
             // 

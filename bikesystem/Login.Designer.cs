@@ -98,6 +98,7 @@
             this.NameTb.SelectedText = "";
             this.NameTb.Size = new System.Drawing.Size(252, 40);
             this.NameTb.TabIndex = 0;
+
             // 
             // PasswordTb
             // 

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LogOutButton = new System.Windows.Forms.Button();
             this.LogOutIcon = new System.Windows.Forms.PictureBox();
@@ -85,7 +85,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(218, 856);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 8;
             // 
             // LogOutButton
             // 
@@ -124,7 +124,7 @@
             this.BillsButton.Location = new System.Drawing.Point(81, 449);
             this.BillsButton.Name = "BillsButton";
             this.BillsButton.Size = new System.Drawing.Size(63, 36);
-            this.BillsButton.TabIndex = 0;
+            this.BillsButton.TabIndex = 2;
             this.BillsButton.Text = "Bills";
             this.BillsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BillsButton.UseVisualStyleBackColor = false;
@@ -151,7 +151,7 @@
             this.UsersButton.Location = new System.Drawing.Point(81, 359);
             this.UsersButton.Name = "UsersButton";
             this.UsersButton.Size = new System.Drawing.Size(63, 36);
-            this.UsersButton.TabIndex = 7;
+            this.UsersButton.TabIndex = 1;
             this.UsersButton.Text = "Users";
             this.UsersButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UsersButton.UseVisualStyleBackColor = false;
@@ -177,11 +177,10 @@
             this.AccessoriesButton.Location = new System.Drawing.Point(81, 270);
             this.AccessoriesButton.Name = "AccessoriesButton";
             this.AccessoriesButton.Size = new System.Drawing.Size(119, 36);
-            this.AccessoriesButton.TabIndex = 3;
+            this.AccessoriesButton.TabIndex = 0;
             this.AccessoriesButton.Text = "Accessories";
             this.AccessoriesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AccessoriesButton.UseVisualStyleBackColor = false;
-            this.AccessoriesButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // AccessoriesIcon
             // 
@@ -193,7 +192,6 @@
             this.AccessoriesIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AccessoriesIcon.TabIndex = 2;
             this.AccessoriesIcon.TabStop = false;
-            this.AccessoriesIcon.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // BikeStoreIcon
             // 
@@ -205,7 +203,6 @@
             this.BikeStoreIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BikeStoreIcon.TabIndex = 1;
             this.BikeStoreIcon.TabStop = false;
-            this.BikeStoreIcon.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // HeaderText
             // 
@@ -218,7 +215,6 @@
             this.HeaderText.Size = new System.Drawing.Size(119, 30);
             this.HeaderText.TabIndex = 1;
             this.HeaderText.Text = "BikeStore";
-            this.HeaderText.Click += new System.EventHandler(this.label1_Click);
             // 
             // ItemsManagementHeader
             // 
@@ -230,7 +226,6 @@
             this.ItemsManagementHeader.Size = new System.Drawing.Size(227, 37);
             this.ItemsManagementHeader.TabIndex = 1;
             this.ItemsManagementHeader.Text = "Items Management";
-            this.ItemsManagementHeader.Click += new System.EventHandler(this.ItemsManagementHeader_Click);
             // 
             // NameTb
             // 
@@ -251,7 +246,6 @@
             this.NameTb.SelectedText = "";
             this.NameTb.Size = new System.Drawing.Size(283, 40);
             this.NameTb.TabIndex = 0;
-            this.NameTb.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // CategoryTb
             // 
@@ -420,26 +414,26 @@
             // 
             // ItemsDGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.ItemsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ItemsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ItemsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ItemsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ItemsDGV.ColumnHeadersHeight = 30;
             this.ItemsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ItemsDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ItemsDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.ItemsDGV.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.ItemsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ItemsDGV.Location = new System.Drawing.Point(625, 126);
@@ -494,7 +488,6 @@
             this.Name = "Bikes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutIcon)).EndInit();

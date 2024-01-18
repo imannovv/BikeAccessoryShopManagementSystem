@@ -19,11 +19,6 @@ namespace bikesystem
             ShowUsers();
         }
 
-        private void ItemsManagementHeader_Click(object sender, EventArgs e)
-        {
-
-        }
-        
         int Key = 0;
         private void UsersDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -40,11 +35,6 @@ namespace bikesystem
             {
                 Key = Convert.ToInt32(UsersDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
-        }
-
-        private void GunaPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
@@ -151,46 +141,6 @@ namespace bikesystem
                 }
 
             }
-        }
-
-        private void QuantityBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ItemDetailsBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ItemCategoryBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ItemNameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ExitIcon_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ItemsManagementIcon_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ItemPriceBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void LogOutButton_Click(object sender, EventArgs e)
