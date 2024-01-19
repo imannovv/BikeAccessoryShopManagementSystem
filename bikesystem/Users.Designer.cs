@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.UsersDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.GunaPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.DeleteBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -70,26 +70,26 @@
             // 
             // UsersDGV
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.UsersDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.UsersDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.UsersDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UsersDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.UsersDGV.ColumnHeadersHeight = 30;
             this.UsersDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.UsersDGV.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.UsersDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.UsersDGV.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.UsersDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.UsersDGV.Location = new System.Drawing.Point(624, 126);
@@ -130,7 +130,6 @@
             this.GunaPanel.Name = "GunaPanel";
             this.GunaPanel.Size = new System.Drawing.Size(11, 732);
             this.GunaPanel.TabIndex = 26;
-
             // 
             // DeleteBtn
             // 
@@ -202,7 +201,6 @@
             this.AddressTb.SelectedText = "";
             this.AddressTb.Size = new System.Drawing.Size(283, 40);
             this.AddressTb.TabIndex = 4;
-
             // 
             // PhoneTb
             // 
@@ -223,7 +221,6 @@
             this.PhoneTb.SelectedText = "";
             this.PhoneTb.Size = new System.Drawing.Size(283, 40);
             this.PhoneTb.TabIndex = 3;
-
             // 
             // PassWordTb
             // 
@@ -244,7 +241,6 @@
             this.PassWordTb.SelectedText = "";
             this.PassWordTb.Size = new System.Drawing.Size(283, 40);
             this.PassWordTb.TabIndex = 2;
-
             // 
             // NameTb
             // 
@@ -265,7 +261,6 @@
             this.NameTb.SelectedText = "";
             this.NameTb.Size = new System.Drawing.Size(283, 40);
             this.NameTb.TabIndex = 0;
-
             // 
             // UsersManagementHeader
             // 
@@ -277,7 +272,6 @@
             this.UsersManagementHeader.Size = new System.Drawing.Size(225, 37);
             this.UsersManagementHeader.TabIndex = 16;
             this.UsersManagementHeader.Text = "Users Management";
-
             // 
             // panel1
             // 
@@ -297,7 +291,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(218, 856);
             this.panel1.TabIndex = 15;
- 
             // 
             // LogOutButton
             // 
@@ -448,7 +441,6 @@
             this.UNameTb.SelectedText = "";
             this.UNameTb.Size = new System.Drawing.Size(283, 40);
             this.UNameTb.TabIndex = 1;
-
             // 
             // ExitIcon
             // 
@@ -460,7 +452,7 @@
             this.ExitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ExitIcon.TabIndex = 28;
             this.ExitIcon.TabStop = false;
-
+            this.ExitIcon.Click += new System.EventHandler(this.ExitIcon_Click);
             // 
             // ItemsManagementIcon
             // 
@@ -472,7 +464,6 @@
             this.ItemsManagementIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ItemsManagementIcon.TabIndex = 17;
             this.ItemsManagementIcon.TabStop = false;
-   
             // 
             // Users
             // 
